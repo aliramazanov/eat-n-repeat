@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
               reflects the essence of our culinary artistry. From the wood-fired
               oven to your plate, our commitment to tradition shines through,
               delivering an unparalleled experience that beckons both
-              connoisseurs and novices alike.
+              connoisseurs and novices.
             </p>
             <div className={"flex gap-4"}>
               <button
