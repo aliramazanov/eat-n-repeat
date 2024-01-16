@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import MenuItem from "../menu/MenuItem";
+import { SectionHeaders } from "./SectionHeaders";
 
 const HomeMenu: React.FC = () => {
   return (
@@ -25,10 +26,7 @@ const HomeMenu: React.FC = () => {
             ></Image>
           </div>
           <div className={"text-center"}>
-            <h3 className={"uppercase text-zinc-600 font-semibold leading-3"}>
-              Checkout
-            </h3>
-            <h3 className={"text-primary font-bold text-5xl italic"}>Menu</h3>
+            <SectionHeaders subHeader={"Check Out"} mainHeader={"Menu"} />
           </div>
           <div className={"mt-8 grid grid-cols-3 gap-4"}>
             <MenuItem />
