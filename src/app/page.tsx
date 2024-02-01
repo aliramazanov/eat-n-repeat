@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 import Hero from "./components/layout/Hero";
 import HomeMenu from "./components/layout/HomeMenu";
 import { SectionHeaders } from "./components/layout/SectionHeaders";
@@ -7,7 +7,6 @@ import { SectionHeaders } from "./components/layout/SectionHeaders";
 const Home: React.FC = () => {
   return (
     <React.Fragment>
-      <Header />
       <Hero />
       <HomeMenu />
       <section className="text-center my-12">
@@ -33,6 +32,17 @@ const Home: React.FC = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
             similique.
           </p>
+        </div>
+      </section>
+      <section>
+        <div className="text-center my-8">
+          <SectionHeaders
+            subHeader={"Don't hesitate"}
+            mainHeader={"Contact Us"}
+          />
+          <a href={"tel:+9945000000"} className="text-xl text-gray-500 mt-2">
+            +994 77 500 00 00
+          </a>
         </div>
       </section>
     </React.Fragment>

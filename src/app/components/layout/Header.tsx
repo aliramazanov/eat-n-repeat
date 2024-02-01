@@ -4,7 +4,11 @@ import React from "react";
 const Header: React.FC = () => {
   return (
     <React.Fragment>
-      <header className={"flex justify-between items-center mt-10"}>
+      <header
+        className={
+          "max-w-5xl mx-auto pt-5 flex justify-between items-center mt-10"
+        }
+      >
         <Link className={"text-primary font-bold text-6xl"} href={""}>
           Eat & Repeat
         </Link>
@@ -21,9 +25,19 @@ const Header: React.FC = () => {
           <Link className={"hover:text-primary transition-all"} href={"/"}>
             Contact
           </Link>
+        </nav>
+        <nav className={"flex items-center gap-4 font-semibold text-zinc-500"}>
           <Link
-            className={"bg-primary px-6 py-2 rounded-full text-white"}
-            href="/"
+            className={"hover:text-primary transition-all"}
+            href={"/register"}
+          >
+            Register
+          </Link>
+          <Link
+            className={
+              "bg-white px-6 py-2 rounded-full text-black border border-gray-500 hover:transition-all hover:shadow-md hover:bg-primary hover:text-white hover:border-transparent"
+            }
+            href={"/login"}
           >
             Login
           </Link>

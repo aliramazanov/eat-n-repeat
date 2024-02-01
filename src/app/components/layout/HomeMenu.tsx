@@ -34,6 +34,7 @@ const HomeMenu: React.FC = () => {
             <MenuItem />
             <MenuItem />
             <MenuItem />
+            <MenuItem />
           </div>
         </div>
       </section>
